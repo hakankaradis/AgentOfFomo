@@ -1,0 +1,12 @@
+{
+  "name": "AgentOfFomo",
+  "symbol": "AOFOMO",
+  "description": "The autonomous meme agent for maximum emotional entry timing. Trust the signal. Regret the timing.",
+  "image": "https://agentoffomo.com/images/mascot.png",
+  "external_url": "https://agentoffomo.com",
+  "attributes": [],
+  "properties": {
+    "category": "currency",
+    "creators": []
+  }
+}

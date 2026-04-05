@@ -5,13 +5,23 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "npm run build && firebase deploy --only hosting",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@metaplex-foundation/mpl-token-metadata": "^3.4.0",
+    "@metaplex-foundation/umi": "^1.5.1",
+    "@metaplex-foundation/umi-bundle-defaults": "^1.5.1",
+    "@metaplex-foundation/umi-web3js-adapters": "^1.5.1",
+    "@remotion/cli": "^4.0.445",
+    "@remotion/player": "^4.0.445",
+    "@solana/web3.js": "^1.98.4",
+    "bs58": "^6.0.0",
     "next": "16.2.2",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "remotion": "^4.0.445"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
