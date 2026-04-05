@@ -6,7 +6,7 @@ import GlitchText from "./animations/GlitchText";
 import TypewriterText from "./animations/TypewriterText";
 import AnimatedCounter from "./animations/AnimatedCounter";
 import FloatingAlerts from "./animations/FloatingAlerts";
-import AgentMascot from "./animations/AgentMascot";
+import AgentMascotOrb from "./animations/AgentMascotOrb";
 
 function DataStreams() {
   const [numbers, setNumbers] = useState<string[][]>([[], []]);
@@ -128,14 +128,14 @@ export default function Hero() {
         </div>
 
         {/* Mascot with enhanced effects */}
-        <div className="relative mx-auto w-64 sm:w-80 mb-12">
+        <div className="relative mx-auto w-72 h-72 sm:w-96 sm:h-96 mb-12">
           {/* Background glow behind mascot */}
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="w-48 h-48 sm:w-60 sm:h-60 rounded-full bg-neon/5 blur-[60px] animate-scale-pulse" />
+            <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-full bg-neon/5 blur-[60px] animate-scale-pulse" />
           </div>
 
-          <AgentMascot
-            size={320}
+          <AgentMascotOrb
+            size={384}
             className="relative z-10 mx-auto drop-shadow-[0_0_40px_rgba(57,255,20,0.3)]"
           />
         </div>
