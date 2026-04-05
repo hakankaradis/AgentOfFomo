@@ -128,26 +128,15 @@ export default function Hero() {
         </div>
 
         {/* Mascot with enhanced effects */}
-        <div className="relative mx-auto w-64 h-64 sm:w-80 sm:h-80 mb-12">
-          {/* Radar sweep ring */}
-          <div className="absolute inset-[-20px] rounded-full">
-            <div className="absolute inset-0 rounded-full border border-neon/10" />
-            <div
-              className="absolute inset-0 rounded-full animate-radar"
-              style={{
-                background: "conic-gradient(from 0deg, transparent 0%, transparent 70%, rgba(57, 255, 20, 0.15) 100%)",
-              }}
-            />
+        <div className="relative mx-auto w-64 sm:w-80 mb-12">
+          {/* Background glow behind mascot */}
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <div className="w-48 h-48 sm:w-60 sm:h-60 rounded-full bg-neon/5 blur-[60px] animate-scale-pulse" />
           </div>
-
-          {/* Glow rings */}
-          <div className="absolute inset-0 rounded-full animate-glow-ring" />
-          <div className="absolute inset-[-8px] rounded-full border border-neon/10 animate-pulse-glow" />
-          <div className="absolute inset-3 rounded-full border border-neon/5" />
 
           <AgentMascot
             size={320}
-            className="relative z-10 drop-shadow-[0_0_40px_rgba(57,255,20,0.35)]"
+            className="relative z-10 mx-auto drop-shadow-[0_0_40px_rgba(57,255,20,0.3)]"
           />
         </div>
 
