@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import ScrollReveal from "./animations/ScrollReveal";
+import HoloBg from "./animations/HoloBg";
 import { useEffect, useRef, useState } from "react";
 
 function TerminalLine({ children, delay }: { children: React.ReactNode; delay: number }) {
@@ -44,14 +44,9 @@ function TerminalLine({ children, delay }: { children: React.ReactNode; delay: n
 export default function Lore() {
   return (
     <section id="lore" className="relative py-24 sm:py-32">
-      {/* Background banner */}
-      <div className="absolute inset-0 opacity-5 pointer-events-none">
-        <Image
-          src="/images/hero-banner.png"
-          alt=""
-          fill
-          className="object-cover"
-        />
+      {/* Background — holographic radar/chart overlay */}
+      <div className="absolute inset-0 opacity-[0.06] pointer-events-none">
+        <HoloBg />
       </div>
       <div className="max-w-4xl mx-auto px-4 relative z-10">
         <ScrollReveal direction="none">

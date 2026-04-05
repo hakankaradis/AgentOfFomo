@@ -1,7 +1,7 @@
 "use client";
 
-import Image from "next/image";
 import ScrollReveal from "./animations/ScrollReveal";
+import AgentPortrait from "./animations/AgentPortrait";
 
 export default function About() {
   return (
@@ -30,9 +30,7 @@ export default function About() {
           <ScrollReveal direction="left" delay={200}>
             <div className="shrink-0 relative group">
               <div className="absolute inset-0 rounded-xl bg-neon/5 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              <Image
-                src="/images/mascot-portrait.png"
-                alt="AgentOfFomo"
+              <AgentPortrait
                 width={300}
                 height={450}
                 className="relative rounded-xl border border-card-border drop-shadow-[0_0_20px_rgba(57,255,20,0.15)] transition-transform duration-500 group-hover:scale-[1.02]"
