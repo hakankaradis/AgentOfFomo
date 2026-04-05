@@ -1,7 +1,8 @@
-import { Composition, Folder } from "remotion";
+import { Composition, Folder, Still } from "remotion";
 import { SignalDetected } from "./compositions/SignalDetected";
 import { AgentActivated } from "./compositions/AgentActivated";
 import { FomoAlert } from "./compositions/FomoAlert";
+import { MascotScenePreview } from "./stills/MascotScenePreview";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -33,6 +34,13 @@ export const RemotionRoot: React.FC = () => {
           height={1080}
         />
       </Folder>
+
+      <Still
+        id="MascotScenePreview"
+        component={MascotScenePreview}
+        width={1200}
+        height={800}
+      />
     </>
   );
 };
